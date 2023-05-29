@@ -8,6 +8,9 @@ h2,  h3, body {
 html {
 	scroll-behavior: smooth;
 }
+.navigation {
+	text-align: right;
+}
 .line{
 	border-bottom: 2px solid black;
 	margin-bottom:10px;
