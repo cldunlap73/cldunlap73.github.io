@@ -10,9 +10,9 @@ html {
 }
 .navigation {
 	display:flex;
-	justify-content:end;
+	justify-content:space-around;
 	background-color: rgb(123,170,193);
-	text-align: right;
+	text-align: center;
 }
 .line{
 	border-bottom: 2px solid black;
