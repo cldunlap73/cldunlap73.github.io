@@ -9,6 +9,9 @@ html {
 	scroll-behavior: smooth;
 }
 .navigation {
+	display:flex;
+	justify-content:end;
+	background-color: rgb(123,170,193);
 	text-align: right;
 }
 .line{
