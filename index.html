@@ -1,287 +1,391 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Christy Dunlap</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INTUITIVE, Your design is your passion, Key Features, Pricing Plan, Empire State Building">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.3.1, nicepage.com">
+    <meta name="referrer" content="origin">
+    
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Charis+SIL:400,400i,700,700i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site2",
+		"logo": "images/logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <script>
+    function gdprConfirmed() {
+        return true;
+    }
+    function dynamicLoadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6LemWtAqAAAAAG8rlGbdrD0YpWU-3DcWlQ9L4D2P';
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = function() {
+            let event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+    }
+    function showRecaptchaError(error) {
+        error = error || '';
+        var formError = document.querySelector('.u-form-send-error');
 
-<div class="completeheading">
-<div class="navigation">
-<div class="dropdown">
-<img src="./images/icon.png" class="icon">
-<div class="dropdown-content">
-<p><a href="#basic_info_link">About Me </a></p>
- <p><a href="#projects_link">Projects</a></p>
- <p><a href="#conferences_link">Conferences</a></p>
- <p><a href="#hobby_link">Hobbies</a></p>
- <p><a href="#publications_link">Publications</a></p>
-</div>
-</div>
-</div>
-<div class="completeheading_2">
-<div class="namebanner">
-<img src="./images/photo.jpg" class="headshot">
-<h1>Christy L. Dunlap</h1>
-<div class="options">
-<ul id="buttons">
-<li><a href="./pdfs/Dunlap_cv.pdf" target="_blank">Download CV</a></li>
-<li><a href="https://github.com/cldunlap73" target="_blank">GitHub</a></li>
-<li><a href="https://www.linkedin.com/in/christy-dunlap" target="_blank">Linkedin</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+        if (formError) {
+            formError.innerText = 'Site Owner Error: ' + error.replace(/:[\s\S]*/, '');
+            formError.style.display = 'block';
+        }
 
-<div class="basic_info" id="basic_info_link">
-<div class="about">
-<h2>About</h2>
-<p>I am a mechanical engineering graduate student at the University of Arkansas. I am a 
-graduate reseach assistant and part of the <a href="https://ned3.uark.edu/">Nano Energy 
-and Data Driven Discovery Lab</a>. My research covers using machine learning models for 
-analysizing cooling data obtained by experiments primarly in our lab. This includes pool 
-boiling high speed imaging data, acoustic data, etc.</p>
-</div>
+        console.error('Error in grecaptcha: ', error);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
+        if (confirmButton) {
+            confirmButton.onclick = dynamicLoadScript;
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript();
+        });
+    </script>
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
 
-<div class="education">
-<h2>Contact Me</h2>
-<p>The best way to contact me is through one of my emails:</p>
-<ul><li>School: cldunlap@uark.edu</li>
-<li>Personal: christydunlap26@gmail.com</li></ul>
-</div>
-</div>
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        if (typeof grecaptcha === 'undefined' || typeof grecaptcha.execute !== 'function') {
+                            showRecaptchaError('reCAPTCHA script failed to load.');
+                            return;
+                        }
 
+                        grecaptcha.execute(sitekey, {action: action}).then((token) => {
+                            if (!token) {
+                                throw new Error('Empty token received from reCAPTCHA');
+                            }
 
-<div class="basic_info">
-<div class="about">
-<h2>Skills</h2>
-<ul> <li>SolidWorks</li>
-<li>Arduino</li>
-<li>Python</li>
-<li>Tensorflow</li>
-<li>PyTorch</li>
-<li>Labview</li>
-<li>MatLab</li></ul>
-</div>
+                            var forms = document.getElementsByTagName('form');
 
+                            for (var i = 0; i < forms.length; i++) {
+                                var response = forms[i].querySelector('[name="recaptchaResponse"]');
 
-<div class="education">
-<h2>Education</h2>
-<ul><li> Ph.D. in Engineering with Mechanical Engineering Concentration 
-<ul><li>University of Arkansas 2021-Current </li></ul> </li>
-<li> B.S. in Mechanical Engineering <ul><li>University of Arkansas 2017-2021</li>
-<li>Minor in Agricultural Business</li></ul></li>
-<li>B.S. in Mathematics with an Applied Concentration <ul>
-<li>University of Arkansas 2017-2021</li></ul> </li>
-</ul> 
-</div>
-</div>
+                                if (!response) {
+                                    response = document.createElement('input');
+                                    response.setAttribute('type', 'hidden');
+                                    response.setAttribute('name', 'recaptchaResponse');
+                                    forms[i].appendChild(response);
+                                }
 
+                                response.value = token;
+                            }
 
-<div class="projects" id="projects_link">
-<h2>Projects</h2>
-<div class="project_list">
-<div class="project">
-<img src="./images/ar.png" class="prj">
-<div>
-<h3>Acoustic Regression</h3>
-<p>Two-phase cooling allows for higher heat dissipation compared to single phase methods.
-However, it is bounded by a pratical limit known as the critical heat flux. Nonintrusive monitors
-This project utlilizes sound recorded from a hydrophone during pool boiling experiments
-with machine learning models to predict heat flux. For more information, check out the paper
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1359431123005872">here</a>.</p>
-</div>
-</div>
-<div class="project">
-<img src="./images/cv.png" class="prj">
-<div>
-<h3>Human Pose Estimation</h3>
-<p>For my final project for computer vision, we used openpose to annotate videos with the pose
-estimations. We also used media pipe and Arduino to make a robot that mimics arm and head 
-movements in real time. For more information, check out the final report <a href="./pdfs/CSCE_5703_Final_Project.pdf">here</a>. </p>
-</div>
-</div>
-<div class="project">
-<img src="./images/3d.png" class="prj">
-<div>
-<h3>3D reconstruction</h3>
-<p>For my final project for my intro to deep learning class, we used (based on 
-<a href="./pdfs/neus.pdf">this paper</a> by Wei et. al.)
-to create 3D surface reconstruction of objects just from images in different perspectives.
-We used this to create a model of a razorback and printed off the final result. For more 
-information, check out the final report <a href="./pdfs/CSCE_5563_Final_Project_Report.pdf">here</a>. </p>
-</div>
-</div>
-<div class="project">
-<img src="./images/asri.png" class="prj">
-<div>
-<h3>ASRI Presentation</h3>
-<p>Over the summer in 2022, I participated in the Arkansas Summer Research Institution. 
-This is a 2 week program for learning data science techniques. For the final presentation,
-I used material property data from Jarvis. I used features from crystalline structures and 
-machine learning regression models to predict material properties. Check out the final presentation
-<a href="./pdfs/ASRI Presentation.pdf">here</a>. </p>
-</div>
-</div>
-<div class="project">
-<img src="./images/shtc2022.png" class="prj">
-<div>
-<h3>Boiling Regime Classification</h3>
-<p>Pool boiling regimes are marked by different visual characteristics. Computer vision techniques
-have been used to classify the regimes. This work utilizes supervised and unsupervised models
-to classify and group images taken during pool boiling experiments. Check out the conference
-paper <a href="https://asmedigitalcollection.asme.org/HT/proceedings-abstract/HT2022/1146566">here</a>. </p>
-</div>
-</div>
-<div class="project">
-<img src="./images/dipcoater.png" class="prj">
-<div>
-<h3>Design & Fabrication of a dip coater</h3>
-<p>For my capstone project in undergrad, we designed and built a low cost dip coater. 
-To read more about this check out the published paper <a href="https://www.sciencedirect.com/science/article/pii/S2468067222001092">here</a>. </p>
-</div>
-</div>
-</div>
-</div>
+                            submitFormCb();
+                        }).catch((e) => {
+                            showRecaptchaError(e.message);
+                        });
+                    },
 
-<div class="hobbies" id="conferences_link">
-<h2>Conferences</h2>
-<div class="hobby_list">
-<div class="hobby">
-<img src="./images/placeholder.png" class="prj">
-<div>
-<h3>Summer Heat Transfer Conference 2023</h3>
-<p>I attended the SHTC in Washington DC. I presented work on heat flux regression models utalizing microphone and hydrophone sensors.</p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/california.png" class="prj">
-<div>
-<h3>Thermal AI</h3>
-<p>I attended the Thermal AI workshop in Irvine, California. I presented a poster on 
-boiling acoustic regression models. The poster can be found <a href="./pdfs/Dunlap_2023_AI for Thermal Energy Science Workshop_Poster.pdf">here</a>.</p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/placeholder.png" class="prj">
-<div>
-<h3>DART 2023</h3>
-<p>I attended the dart conference in Little Rock, Arkansas. I presented a poster
-on boiling acoustic regression models. The poster can be found <a href="./pdfs/Dunlap_2023_DART_Annual_Conference_Graduate_Poster.pdf">here</a>. </p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/tulsa.png" class="prj">
-<div>
-<h3>ASEE</h3>
-<p>I attended the ASEE midwest conference in Tulsa, Oklahoma. I presented on 
-integrating supercomputing into engineering curriculum. The presentation can be found <a href="./pdfs/Dunlap_2022_ASEE_Midwest.pdf">here</a>.</p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/philladelphia.png" class="prj">
-<div>
-<h3>Summer Heat Transfer Conference 2022</h3>
-<p>I attended the SHTC in Philldelphia, Pennsilvania. I presented on pool boiling regime
-classification machine learning models. The presentation can be found <a href="./pdfs/Dunlap_2022_ASME_SHTC_HT2022-85582.pdf">here</a>.</p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/placeholder.png" class="prj">
-<div>
-<h3>DART 2022</h3>
-<p>I attended the dart conference in Little Rock, Arkansas. I presented a poster on boiling image and acoustic
-data fusion models. </p>
-</div>
-</div>
-</div>
-</div>
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
 
-
-<div class="hobbies" id="hobby_link">
-<h2>Hobbies/ Personal Projects</h2>
-<div class="hobby_list">
-<div class="hobby">
-<img src="./images/hiking.png" class="prj">
-<div>
-<h3>Hiking</h3>
-<p>I enjoy hiking around different areas in Arkansas on the weekends. </p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/sewing.png" class="prj">
-<div>
-<h3>Sewing</h3>
-<p>When I get the chance, I love to sew. Pictured here is my second quilt
-I've ever finished and a dress I made. I also make pillows, clothes, etc. I am always on the hunt for 
-well priced fabric.</p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/games.png" class="prj">
-<div>
-<h3>Board Games</h3>
-<p>I am always down to learn and play a board game. </p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/placeholder.png" class="prj">
-<div>
-<h3>Flea Marketing</h3>
-<p>I love looking through flea market booths finding interesting finds.</p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/pcbuild.png" class="prj">
-<div>
-<h3>PC Build</h3>
-<p>I recently build my first PC. Through the process, I learned alot about the 
-different compents of the computer. There are a few things I would change and 
-probably will when I get the change but none the less it's been a great computer, 
-perfect for playing the video games I play and programming projects. </p>
-</div>
-</div>
-<div class="hobby">
-<img src="./images/vg.png" class="prj">
-<div>
-<h3>Video Games</h3>
-<p>Minecraft is my go to game. I also enjoy playing Halo, We were here forever, etc. Every rainy day
-calls for pc gaming. </p>
-</div>
-</div>
-</div>
-</div>
-
-<div class="publications_upper">
-<div class="publications" id="publications_link">
-<h2>Publications</h2>
-<p>To find a more recent list of publications check out <a href="https://scholar.google.com/citations?user=GEEBRYgAAAAJ&hl=en&oi=ao">my Google Scholar</a>.
-<div><ul><li> C. Dunlap, H. Pandey, E. Weems, and H. Hu, “Nonintrusive Heat Flux Quantification Using
-Acoustic Emissions During Pool Boiling,” Appl Therm Eng, p. 120558, 4, 2023, doi:
-10.1016/j.applthermaleng.2023.120558 </li>
-<li>C. Dunlap, H. Pandey, J. Marsh, E. Weems, and H. Hu, “Remote Thermal Measurements with
-Regression of Acoustic Emissions,” in Proceedings of the ASME 2023 Heat Transfer Summer
-Conference, Jul 2023, Washington, DC, HT2023-106939</li>
-<li>H. Pandey, C. Dunlap, A. Williams, J. Marsh, and H. Hu, “Multimodal Characterization of
-Steady-State and Transient Boiling Heat Transfer,” in Proceedings of the ASME 2023 Heat
-Transfer Summer Conference, Jul 2023, Washington, DC, HT2023-106015</li>
-<li>C. Dunlap, S. Featherstone, M. Smith, M. Vu, A. Williams, J. Bailey, and H. Hu, “Design and
-Fabrication of A Low-Cost and Programmable Dip Coating Machine,” HardwareX, 12, 2022,
-e00364</li>
-<li>J. Marsh, C. Dunlap, S. Pierson, and H. Hu, “Introducing LabVIEW and Arduino as Data
-Acquisition System Alternatives,” in 2022 ASEE Midwest Section Conference, 3279.</li>
-<li>C. Dunlap, J. Pummill, and H. Hu, “Infusing High-Performance Computing and Machine Learning
-in Mechanical Engineering Education,” in 2022 ASEE Midwest Section Conference, 2944</li>
-<li>C. Dunlap, H. Pandey, and H. Hu, “Supervised and Unsupervised Learning Models for Detection
-of Critical Heat Flux During Pool Boiling,” in Proceedings of the ASME 2022 Heat Transfer
-Summer Conference, HT2022-85582</li>
- <ul> </div>
-</div>
-</div>
-<div class="footer"></div>
-</body>
-</html>
+                window.recaptchaObject = recaptcha;
+            })(
+                grecaptcha,
+                
+                '6LemWtAqAAAAAG8rlGbdrD0YpWU-3DcWlQ9L4D2P',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="header"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="1938" data-image-height="1599">
+          <img src="images/logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Academics.html" style="padding: 10px 20px;">Academics</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Academics.html">Academics</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-1" src="" data-image-width="3648" data-image-height="2736" id="sec-f2b1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-custom-color-3 u-group u-opacity u-opacity-70 u-group-1">
+          <div class="u-container-layout u-valign-top u-container-layout-1">
+            <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="800" data-image-height="800"></div>
+            <h1 class="u-align-center u-custom-font u-text u-text-default u-title u-text-1">Christy L. Dunlap</h1>
+            <a href="files/Dunlap_Resume_v2.pdf" class="u-align-center u-border-none u-btn u-button-style u-custom-color-3 u-custom-font u-file-link u-btn-1">Download CV </a>
+            <a href="https://github.com/cldunlap73" class="u-align-center u-border-none u-btn u-button-style u-custom-color-3 u-custom-font u-btn-2">Github </a>
+            <a href="https://www.linkedin.com/in/christy-dunlap/" class="u-align-center u-border-none u-btn u-button-style u-custom-color-3 u-custom-font u-btn-3">Linkedin </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="block-1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <div class="u-border-5 u-border-custom-color-3 u-container-style u-expanded-width u-group u-group-1">
+                        <div class="u-container-layout u-container-layout-2">
+                          <h3 class="u-align-center u-custom-font u-text u-text-default u-text-1">About </h3>
+                          <h6 class="u-custom-font u-text u-text-font u-text-2">I am a Mechanical Engineering PhD candidate at the University of Arkansas. I am a graduate research assistant and part of the Nano Energy and Data Driven Discovery Lab. My research covers using machine learning models for analyzing boiling data. This includes pool boiling high speed imaging data, acoustic data, etc.<br>&nbsp;
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-align-center u-container-align-center u-container-style u-custom-color-3 u-layout-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h3 class="u-align-center u-custom-font u-text u-text-default u-text-3">Education</h3>
+                      <p class="u-align-center u-text u-text-default u-text-4">Ph.D. in Mechanical Engineering<br>University of Arkansas 2021 - Current<br>
+                        <br>B.S. in Mechanical Engineering<br>University of Arkansas 2017 - 2021<br>Minor in Agricultural Business<br>
+                        <br>B.S. in Mathematics with Applied Concentration<br>University of Arkansas 2017 - 2021 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-palette-1-light-3 u-size-30 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-4">
+                      <h3 class="u-align-center u-custom-font u-text u-text-default u-text-5">Skills</h3>
+                      <div class="u-expanded-width u-list u-list-1">
+                        <div class="u-repeater u-repeater-1">
+                          <div class="u-container-style u-list-item u-repeater-item">
+                            <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-5">
+                              <div class="u-container-style u-expanded-width u-group u-radius u-white u-group-2">
+                                <div class="u-container-layout u-valign-middle u-container-layout-6">
+                                  <p class="u-align-center u-text u-text-6">Python<br>LaTeX 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="u-container-style u-list-item u-repeater-item">
+                            <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-7">
+                              <div class="u-container-style u-expanded-width u-group u-radius u-white u-group-3">
+                                <div class="u-container-layout u-valign-middle u-container-layout-8">
+                                  <p class="u-align-center u-text u-text-7">Java<br>C++<br>SQL 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="u-container-style u-list-item u-repeater-item">
+                            <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-9">
+                              <div class="u-container-style u-expanded-width u-group u-radius u-white u-group-4">
+                                <div class="u-container-layout u-valign-middle u-container-layout-10">
+                                  <p class="u-align-center u-text u-text-8">LabVIEW<br>Arduino<br>MATLAB 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="u-container-style u-list-item u-repeater-item">
+                            <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-11">
+                              <div class="u-container-style u-expanded-width u-group u-radius u-white u-group-5">
+                                <div class="u-container-layout u-valign-middle u-container-layout-12">
+                                  <p class="u-align-center u-text u-text-9">Tensorflow<br>Sklearn<br>Scipy
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="u-container-style u-list-item u-repeater-item">
+                            <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-13">
+                              <div class="u-container-style u-expanded-width u-group u-radius u-white u-group-6">
+                                <div class="u-container-layout u-valign-middle u-container-layout-14">
+                                  <p class="u-align-center u-text u-text-10">Windows<br>Linux
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="u-container-style u-list-item u-repeater-item">
+                            <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-15">
+                              <div class="u-container-style u-expanded-width u-group u-radius u-white u-group-7">
+                                <div class="u-container-layout u-valign-middle u-container-layout-16">
+                                  <p class="u-align-center u-text u-text-11">SolidWorks<br>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                    <div class="u-container-layout u-valign-middle u-container-layout-17">
+                      <h3 class="u-align-center u-custom-font u-text u-text-default u-text-12">Contact Me</h3>
+                      <div class="custom-expanded u-form u-form-1">
+                        <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                          <div class="u-form-group u-form-name">
+                            <label for="name-3fb6" class="u-label">Name</label>
+                            <input type="text" placeholder="Enter your Name" id="name-3fb6" name="name" class="u-input u-input-rectangle" required="">
+                          </div>
+                          <div class="u-form-email u-form-group">
+                            <label for="email-3fb6" class="u-label">Email</label>
+                            <input type="email" placeholder="Enter a valid email address" id="email-3fb6" name="email" class="u-input u-input-rectangle" required="">
+                          </div>
+                          <div class="u-form-group u-form-message">
+                            <label for="message-3fb6" class="u-label">Message</label>
+                            <textarea placeholder="Enter your message" rows="4" cols="50" id="message-3fb6" name="message" class="u-input u-input-rectangle" required=""></textarea>
+                          </div>
+                          <div class="u-align-left u-form-group u-form-submit">
+                            <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+                            <input type="submit" value="submit" class="u-form-control-hidden">
+                          </div>
+                          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                          <input type="hidden" value="" name="recaptchaResponse">
+                          <input type="hidden" name="formServices" value="5b76672b-692b-80ec-32c8-005817b5d79d">
+                          <input type="hidden" name="siteKey" value="6LemWtAqAAAAAG8rlGbdrD0YpWU-3DcWlQ9L4D2P">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-section-3" id="block-2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-expanded-width-xs u-group u-palette-1-dark-2 u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-align-center u-custom-font u-text u-text-default u-text-1">Off The Clock</h2>
+          </div>
+        </div>
+        <p class="u-align-center u-text u-text-default u-text-2">Outside of the lab I am filling my time with other hobbies and personal projects.</p>
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-20">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-2">
+                      <img class="u-expanded-width u-image u-image-default u-image-1" src="images/hiking.jpg" alt="" data-image-width="3363" data-image-height="2475">
+                      <p class="u-align-center u-text u-text-default u-text-3">Hiking</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                      <img class="u-expanded-width u-image u-image-default u-image-2" src="images/sewing.jpg" alt="" data-image-width="3360" data-image-height="2475">
+                      <p class="u-align-center u-text u-text-default u-text-4">Sewing</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                    <div class="u-container-layout u-valign-top u-container-layout-4">
+                      <img class="u-expanded-width u-image u-image-default u-image-3" src="images/boardgames.jpg" alt="" data-image-width="3362" data-image-height="2475">
+                      <p class="u-align-center u-text u-text-default u-text-5">Board Games</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-4">
+                    <div class="u-container-layout u-container-layout-5">
+                      <img class="custom-expanded u-image u-image-default u-image-4" src="images/pcbuild.jpg" alt="" data-image-width="3362" data-image-height="2475">
+                      <p class="u-text u-text-default u-text-6">PC ​Build</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5">
+                    <div class="u-container-layout u-container-layout-6">
+                      <img class="custom-expanded u-image u-image-default u-image-5" src="images/vg.jpg" alt="" data-image-width="3362" data-image-height="2475">
+                      <p class="u-align-center u-text u-text-default u-text-7">Video Games</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-6">
+                    <div class="u-container-layout u-container-layout-7"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-7">
+                    <div class="u-container-layout u-container-layout-8"></div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-8">
+                    <div class="u-container-layout u-container-layout-9"></div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-9">
+                    <div class="u-container-layout u-container-layout-10"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Christy Dunlap​ - 2025</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <p class="u-text">
+        <span>This site was created with the </span>
+        <a class="u-link" href="https://nicepage.com/" target="_blank" rel="nofollow">
+          <span>Nicepage</span>
+        </a>
+      </p>
+    </section>
+  
+</body></html>
